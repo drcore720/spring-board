@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>제목</th>
+                <th>내용</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="list : ${list}">
+                <td th:text="${list.idx}"></td>
+                <td th:text="${list.title}"></td>
+                <td th:text="${list.content}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        <a href="/">메인</a>
+    </p>
+</div> <!-- /container -->
+</body>
+</html>

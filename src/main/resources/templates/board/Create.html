@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<div class="container">
+    <form action="/board/create" method="post">
+        <table>
+            <tr>
+                <th><label for="subject">제목</label></th>
+            </tr>
+            <tr>
+                <td><input type="text" id="subject" name="subject" placeholder="제목을 입력하세요"></td>
+            </tr>
+            <tr>
+                <th><label for="content">내용</label></th>
+            </tr>
+            <tr>
+                <td><textarea id="content" name="content" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
